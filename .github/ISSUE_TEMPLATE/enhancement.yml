@@ -1,0 +1,18 @@
+name: Enhancement
+description: Request new functionality
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a detailed description of the suggested new functionality.
+      placeholder: Be sure to include contextual info, as readers may not be aware of what you are doing.
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reasoning for new functionality
+    validations:
+      required: false
