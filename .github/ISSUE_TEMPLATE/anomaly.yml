@@ -1,0 +1,46 @@
+name: Anomaly
+description: Report an anomaly
+labels: ["anomaly"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a detailed description of the problem.
+      placeholder: Be sure to include contextual info, as readers may not be aware of what you are doing.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version are you running that you noticed this problem?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what happens in the version noted above that you'd like to change.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce the Actual Behavior
+      placeholder: |
+        1. Do this
+        2. Do that
+    validations:
+      required: true
+  - type: input
+    id: related
+    attributes:
+      label: Related Work
+      description: Links to related tickets or prior related work here.

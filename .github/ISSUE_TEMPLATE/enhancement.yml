@@ -1,0 +1,41 @@
+name: Enhancement
+description: Report an enhancement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a detailed description of the suggested new functionality.
+      placeholder: Be sure to include contextual info, as readers may not be aware of what you are doing.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What's the current version of this project?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what happens in the version noted above that you'd like to change.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce the Actual Behavior
+      placeholder: |
+        1. Do this
+        2. Do that
+    validations:
+      required: true
